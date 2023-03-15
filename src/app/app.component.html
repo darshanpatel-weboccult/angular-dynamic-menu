@@ -13,6 +13,7 @@
               placeholder="Enter a value.."
               [value]="input"
               (input)="input = inp.value"
+              (keyup.enter)="addNode()"
             />
             <button (click)="addNode()">Add</button>
           </div>
