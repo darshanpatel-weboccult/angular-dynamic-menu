@@ -39,4 +39,8 @@ export class AppComponent {
       (item) => item.level === 0
       );
   }
+
+  clearMenu(){
+    this.np.clearData();
+  }
 }

@@ -56,4 +56,8 @@ export class NodeService {
   getData() {
     return this.data.asObservable();
   }
+
+  clearData(){
+    this.data.next([]);
+  }
 }
