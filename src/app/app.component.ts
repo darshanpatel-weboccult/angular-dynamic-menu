@@ -15,7 +15,7 @@ export interface Node {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'ng-menu';
+  title = 'Angular Dynamic Menu';
   input: string;
   data: Node[] = [];
   children: Node[];
