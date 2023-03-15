@@ -27,12 +27,14 @@ export class SelectComponent implements OnChanges{
       this.children = this.data.filter((item) => {
         return item.level === this.level + 1 && item.parent === this.selected;
       });  
+      console.log("test", this.children);
     });
   }
 
   ngOnChanges(changes: SimpleChanges): void {
       if(changes['parent']){
         this.parent = changes['parent'].currentValue;
+        this.selected = null;
       }
       if(changes['level']){
         this.level = changes['level'].currentValue;
